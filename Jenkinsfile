@@ -4,10 +4,9 @@ pipeline {
     stages {
         stage('Clone') {
             steps {
-                git 'https://github.com/buituansonHE172207/jenkin_github.git'
+                // Sử dụng lệnh git để clone repository
+                git branch: 'main', url: 'https://github.com/buituansonHE172207/jenkin_github.git'
             }
         }
-        
-        
     }
 }
